@@ -55,6 +55,10 @@ li::before {
     right: 0;
     margin: 20px;
     font-size: 40px;
+
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
 }
 .nav-symbol {
     padding: 10px;
