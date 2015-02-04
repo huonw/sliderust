@@ -100,7 +100,7 @@ window.addEventListener('load', function () {
         var dx = ev.changedTouches[0].clientX - start_x;
         var dy = ev.changedTouches[0].clientY - start_y;
         if (Math.abs(dx) > 0.1 * window.innerWidth && Math.abs(dy) < 0.2 * window.innerHeight) {
-            current += Math.sign(dx);
+            current += -Math.sign(dx);
             update();
         }
     });
